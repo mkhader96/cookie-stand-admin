@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import ReportTable from './ReportTable'
 
 export default function Form() {
   const [userInput, setUserInput] = useState({
@@ -24,7 +25,7 @@ export default function Form() {
 
     setFullReplyState([...fullReplyState, userInput]);
   };
-
+  console.log(fullReplyState[1])
   return (
     <>
       <section className="bg-[#BD8C61] py-4 px-4  text-center ">
@@ -74,13 +75,18 @@ export default function Form() {
           </button>
         </form>
       </section>
-      <section className="w-full pt-10 text-center shadow-lg shadow-black-50 text-xl bg-[#84563C] text-[#EFE2B2] ">
-        {fullReplyState.length > 0 &&
+      <section className="w-full pt-10 text-center shadow-lg shadow-black-50 text-xl bg-[#84563C] text-[#EFE2B2] pb-10">
+        {/* {fullReplyState.length > 0 &&
           fullReplyState.map((item, index) => {
             return(
               <p className="py-2">{JSON.stringify(item)}</p>
             );
-          })}
+          })} */}
+                 {fullReplyState.length > 0 && <ReportTable 
+                report = {fullReplyState}
+                />}
+                {fullReplyState.length == 0 && <h2>No Cookie Stands Available</h2>}
+
       </section>
   
 
