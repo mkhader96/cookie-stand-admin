@@ -28,7 +28,7 @@ export default function Form() {
   console.log(fullReplyState[1])
   return (
     <>
-      <section className="bg-[#BD8C61] py-4 px-4  text-center ">
+      <section className="py-4 px-4 text-center ">
       <form className="m-6" onSubmit={submitHandler}>
           <label className="block font-bold text-2xl mb-2 text-[#270D0B]"> Cookies Stand </label>
           <br></br>
