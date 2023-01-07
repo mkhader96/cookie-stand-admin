@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function services() {
     return(
-        <section className="bg-[#BD8C61] py-20 px-4  text-center items-center">
+        <section className="py-20 px-4  text-center items-center">
             <h1 className="text-4xl font-bold">Services</h1>
             <div className="text-2xl mt-3">Welcome to our Cookies Stand Website</div>
             <div  className="text-2xl mt-3 mb-6">This Page is Coming Soon</div>
